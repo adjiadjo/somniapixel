@@ -4,7 +4,7 @@ import time
 from getpass import getpass
 
 # Connect to Somnia Shannon testnet RPC
-w3 = Web3(Web3.HTTPProvider('https://shannon-rpc.somnia.network'))
+w3 = Web3(Web3.HTTPProvider("https://dream-rpc.somnia.network"))
 
 # Contract details
 contract_address = '0x496eF0E9944ff8c83fa74FeB580f2FB581ecFfFd'
