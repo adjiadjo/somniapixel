@@ -45,7 +45,8 @@ for i in range(loop_count):
     })
 
     signed_txn = w3.eth.account.sign_transaction(txn, private_key=private_key)
-    # Assuming 'signed_txn' is your signed transaction
+    
+    # Use signed_txn['rawTransaction'] instead of signed_txn.rawTransaction
     tx_hash = w3.eth.send_raw_transaction(signed_txn.rawTransaction)
 
     # Print the transaction hash
